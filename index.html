@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <link rel="Shortcut Icon" href="yee/IMG_1181.png" />
+
+  <title>J.C.★YIS || Javascript!</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+  <style type="text/css">
+      @font-face {
+             font-family: "Hall Fetica";
+               src: local('Hall Fetica'),
+                 url(yee/fonts/Hall Fetica.ttf) ;
+               }
+      @font-face {
+             font-family: "Hit The Road";
+               src: local('Hit The Road'),
+                 url(yee/fonts/hitroad.ttf) ;
+               }
+  </style>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      <img src="yee/225px-Unofficial_JavaScript_logo_2.svg.png">
+      <h1 style="font-family: 'Hit The Road'; height: 20%">JavaScript</h1>
+    </section>
+
+    <section class="slide">
+      <h2>What is JavaScript (JS)</h2>
+      <ul>
+        <li class="slide">
+          <h3>JavaScript is</h3>
+          <x>Pronounce as <x style="font-family: '微軟正黑體' ">"嘉發．斯庫利普特" (?)</x> </x>
+        </li>
+
+        <li class="slide">
+          <h3>JavaScript is</h3>
+          <x>A program language born in 1995<x>
+        </li>
+
+        <li class="slide">
+          <h3>JavaScript is</h3>
+          <p>Used to handle clinet's request and server's response</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Why Javascript?</h2>
+      <ul>
+        <li class="slide">
+          <h3>Easy to Learn</h3>
+          <x>Very similar to C language (Object-Oriented), and it's really "Coder-Friendly". You don't even have to type <code>;</code> at every ends of lines!<x>
+        </li>
+
+        <li class="slide">
+          <h3>Easy to Use</h3>
+          <p>No need to compile, just write it inside a HTML file! Also, hit F12 to debug!</p>
+        </li>
+
+        <li class="slide">
+          <h3>Easy to Extend</h3>
+          <p>There are tons of extensions for JS (e.g. JQuery, Phaser), letting JS be able to do almost anything!</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2 style="font-family: '微軟正黑體'">擅長使用JS的朋友</h2>
+      <div class="slide">
+      <img src="yee/yt-logo.png" height="200px" width="200px" style="display:inline;" >  
+      <img src="yee/gglogo.png" height="200px" width="200px" style="display:inline;"> 
+      <img src="yee/fblogo.jpg" height="200px" width="300px" style="display:inline;"> 
+      <img src="yee/over111jpg.jpg" height="200px" width="400px" style="display:inline;">
+      </div>
+      <div class="slide">
+        <img src="yee/deeeepio.png" height="200px" width="400px" style="display:inline;" >
+        <img src="yee/PH%%%.jpg" height="200px" width="400px" style="display:inline;" >
+        <x style="display:inline;">,and more...</x>
+      </div>
+
+    </section>
+
+    <section class="slide">
+      <h2>Try it Out!</h2>
+      <button onclick="TheButt()">Click Me! I'm Written in JS!</button>
+      <img id="pica" src="yee/FFDPT.jpg" style="display: none;" height="360px" width="540px">
+      <img id="picb" src="yee/nope2.jpg" style="display: none;" height="360px" width="360px">
+      
+      <a class="mscBtn" id="audioBtn" title='musik' style="cursor:pointer;"></a>
+      <audio id="bgMusic" src="yee/starwars_shortintroX.mp3" autoplay="autoplay"></audio>
+
+      <script type="text/javascript">
+      var music = document.getElementById("bgMusic");
+        function TheButt()
+        {
+          music.play();
+          $("#pica").slideDown(15000,);
+          setTimeout("ButtPicShown()", 15500);
+        }
+
+        function ButtPicShown()
+        {
+          $("#pica").slideUp(300);
+          $("#picb").slideDown(1);
+        }
+      </script>
+    </section>
+
+    <section class="slide">
+      <h2>Why not JavaScript</h2>
+      <ul>
+        <li class="slide">
+          <h3>Data Type Error...</h3>
+          <x>Because we call every variables <code style="color: red">var</code>, so...<x>
+        </li>
+
+        <li class="slide">
+          <h3>Explorer Differences...</h3>
+          <p>A code displays on Chrome, is not the same on IE (Ummmm...IE)</p>
+        </li>
+
+        <li class="slide">
+          <h3>File Edit is not permitted</h3>
+          <p>Because of Security factors, file operation is not allowed</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Well...FATAL ERROR</h2>
+      <img src="yee/Ahhhhh.jpg" style="display:inline;" >
+      <img src="yee/DamnJS.jpg" style="display:inline;" >
+    </section>
+
+    <section class="slide">
+      <h2 style="font-family: 'Comic Sans MS'">Lesson 1</h2>
+      <h1 style="font-family: 'Comic Sans MS'">Hello World.js</h1>
+    </section>
+
+    <section class="slide">
+      <h2>Hit the Road!</h2>
+      <ul>
+        <li>
+            <h3>Write 'em in either <x style="color:red"><x><</x>script></x> or <x style="color:red">"script.js"</x></h3>
+            <p>You can write your code in HTML using <code><x><</x>script></code> tag or just create a <code>.js</code> file</p>
+            <p>If you choose the second way, don't forget to add <code><x><</x>script src="XXX.js"><x><</x>/script></code> in your HTML!</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Let's Begin!</h2>
+        <h4>(JS)</h4>
+        <code>document.write("Hello, World!")</code>
+        
+        <div><img src="yee/ez.jpg"></div>
+      
+    </section>
+
+    <section class="slide">
+      <h2 style="font-family: 'Comic Sans MS'">Lesson 2</h2>
+      <h1 style="font-family: 'Comic Sans MS'">Hello World with a Button!</h1>
+    </section>
+
+    <!-- End slides. -->
+
+
+
+
+
+
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
